@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEY BABY</title>
+</head>
+<body>
+    <div class="game-card">
+    <h1 class="topheading"> yeahhh We gonna play today ;)</h1>
+
+    <h2 class="topheading">lets play number guessing game </h2>
+    
+    <div class="player">
+        <div class="playerinput">
+            <input class="playerinput" id="playerguess"  type="number" placeholder="Common guess the number"><br>
+            <button class= "playerinput" id="submitbtn"> Submit </button>
+        </div>
+        <div>
+            <button  id="generateNew"> generate new random NUM</button>
+        </div>
+        <div class=" playerinput result" id="result">
+            here you will get the clue
+        </div>
+    </div>
+    <div class="dropdown">
+        <select id="changelevels">
+        <option id="level1" value="1-5">1-5 noob</option>
+        <option id="level2" value="1-10">1-10 normal</option>
+        <option id="level3" value="1-100">1-100 pro</option>
+        <option id="level4" value="1-1000">1-1000 god</option>
+        </select>
+        <select id="changeGuesslevels">
+        <option id="guesses_3" value="3">3 guesses</option>
+        <option id="guesses_5" value="5">5 guesses</option>
+        <option id="guesses_10" value="10">10 guesses</option>
+        <option id="guesses_15" value="15">15 guesses</option>
+        </select>       
+    </div>
+
+    <div class="topheading" id="guesscount">
+                                                        hello
+    </div>
+
+    <footer>
+        <div class="topheading"> HOW TO PLAY :)<br>
+        * Guess a number between 1 and 100 <br>
+        * Try to guess the number in as few attempts as possible<br>
+        * After each guess, you'll be told if your guess is too high or too low<br>
+        * Keep guessing until you find the correct number<br>
+    </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
