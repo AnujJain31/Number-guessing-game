@@ -10,93 +10,53 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Space Mono', monospace;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  background-size: 400% 400%;
-  animation: gradientShift 12s ease infinite;
-  color: #e0e0ff;
+  background-color: #0f0c29;
+  color: #02029e;
   text-align: center;
   padding: 20px;
 }
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+
 
 .topheading {
   color: #ff4d6d;
-  text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff4d6d80;
+  text-shadow: 10px #ff4d6d;
   font-weight: normal;
-}
-h1.topheading {
-  font-size: 1.8rem;
+  font-size: 30px;
   margin-bottom: 5px;
-}
-h2.topheading {
-  font-size: 1.1rem;
-  color: #c9a9ff;
+  font-size:20px;
+  color: #7c0303;
   text-shadow: none;
 }
 
 .player {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(1, 33, 65, 0.05);
+  border: 2px solid black;
   border-radius: 20px;
   padding: 40px 50px;
   margin-top: 15px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 40px rgba(180, 100, 255, 0.15);
   max-width: 600px;
 }
 
 .playerinput {
   font-family: inherit;
 }
-input.playerinput {
-  padding: 12px 16px;
-  border-radius: 10px;
-  border: 1px solid #7c5cff;
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
-  font-size: 1rem;
-  outline: none;
-  transition: 0.3s;
-  width: 260px;
+#playerguess{
+  height : 50px;
+  width: 300px;
 }
-input.playerinput:focus {
-  border-color: #ff4d6d;
-  box-shadow: 0 0 15px rgba(255, 77, 109, 0.6);
+#submitbtn{
+  height: 50px;
+  margin:15px;
 }
-
-button.playerinput,
-#generateNew {
-  margin-top: 15px;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #7c5cff, #ff4d6d);
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(124, 92, 255, 0.4);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-button.playerinput:hover,
-#generateNew:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 25px rgba(255, 77, 109, 0.6);
-}
-button.playerinput:active,
-#generateNew:active {
-  transform: translateY(0) scale(0.98);
+#generateNew{
+  height: 50px;
 }
 
 .result {
   margin-top: 15px;
-  font-size: 1.2rem;
+  font-size: 20px;
   color: #ffd166;
-  text-shadow: 0 0 8px rgba(255, 209, 102, 0.5);
+  text-shadow: 8px;
 }
 
 .dropdown {
@@ -106,28 +66,23 @@ button.playerinput:active,
   padding: 8px 12px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  color: #170202;
   border: 1px solid #7c5cff;
   font-family: inherit;
-  margin: 10px 5px;
+  margin: 10px 5px  5px;
 }
 
 #guesscount {
-  font-size: 1.2rem;
+  font-size:  20px  ;
   margin-top: 10px;
 }
 footer {
   margin-top: 30px;
 }
 footer .topheading {
-  font-size: 0.8rem;
-  color: rgba(255, 77, 109, 0.5);
+  font-size: 15px;
+  color: rgba(149, 4, 31, 0.5);
   text-shadow: none;
-  line-height: 1.6;
-  font-weight: normal;
-}
-
-#changelevels ,#changeGuesslevels {
-  background-color: #0f0c29;
-
+  line-height: 30px;
+  
 }
